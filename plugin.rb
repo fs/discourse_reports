@@ -30,6 +30,7 @@ register_asset('javascripts/discourse/mixins/archetype-template.js.es6')
 
 after_initialize do
   require(File.expand_path('../lib/archetype', __FILE__))
+  require(File.expand_path('../lib/validators/post_validator', __FILE__))
 
   Archetype.register('book')
   Archetype.register('recipe')
